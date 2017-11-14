@@ -1,0 +1,114 @@
+.any-button--more {
+    background-color: $dark;
+    color: #fff;
+}
+
+.any-button--more:hover {
+    background-color: $dark + 20%;
+    color: #fff;
+}
+
+.people-list {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.people-list__item {
+    width: 25%;
+    height: 50%;
+    position: relative;
+    background: #000;
+}
+
+.people-list__item .item-photo,
+.people-list__item .people-list__item-info {
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.people-list__item:hover .item-photo {
+    filter: grayscale(100%) opacity(30%);
+}
+
+.people-list__item .people-list__item-info {
+    z-index: 10;
+    padding: 50px 20px 20px 20px;
+}
+
+.people-list__item-info {
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.people-list__item:hover .people-list__item-info {
+    opacity: 1;
+}
+
+.people-list__item:hover .list-item-conteiner {
+    background-color: rgba(80, 80, 80, 0.5);
+}
+
+.people-list__item--01 .item-photo {
+    background-image: url(../images/foto-01c.jpg);
+}
+
+.people-list__item--02 .item-photo {
+    background-image: url(../images/foto-02c.jpg);
+}
+
+.people-list__item--03 .item-photo {
+    background-image: url(../images/foto-03c.jpg);
+}
+
+.people-list__item--04 .item-photo {
+    background-image: url(../images/foto-04c.jpg);
+}
+
+.people-list__item--05 .item-photo {
+    background-image: url(../images/foto-05c.jpg);
+}
+
+.people-list__item--06 .item-photo {
+    background-image: url(../images/foto-06c.jpg);
+}
+
+.people-list__item--07 .item-photo {
+    background-image: url(../images/foto-07c.jpg);
+}
+
+.people-list__item--08 .item-photo {
+    background-image: url(../images/foto-08c.jpg);
+}
+
+.item-title {
+    color: #fff;
+    font-family: gagalin;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.42;
+}
+
+.item-body {
+    color: #fff;
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.42;
+    margin: 0;
+    padding-bottom: 20px;
+}
