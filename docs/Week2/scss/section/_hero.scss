@@ -1,0 +1,122 @@
+.hero {
+    background-image: url('../images/slide-1-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.hero__img:before {
+    background: url(../images/drops.png) no-repeat;
+    content: "";
+    width: 451px;
+    height: 241px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    margin-left: -32px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.nav {
+    margin-right: rem(15px);
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        @include circle(5px,
+        #fff);
+        margin: 0 12px;
+    }
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .5s;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    padding-bottom: 15%;
+}
+
+.hero__img,
+.hero__description {
+    flex-basis: 50%;
+    display: flex;
+    max-width: 50%;
+}
+
+.hero__description {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title {
+    color: #f9b43b;
+    font-family: 'gagalin';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.42;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.hero__descroption-text {
+    color: #fff;
+    font-family: 'lifehack';
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.any-button--order {
+    background-color: $orange;
+}
