@@ -903,6 +903,7 @@ footer {
   position: absolute;
   z-index: 1;
   bottom: 0;
+  left: 0;
   background-image: url("../images/footer-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -911,6 +912,23 @@ footer {
 .footer-content {
   max-width: 940px;
   margin: 0 auto; }
+
+.footer-content__left,
+.footer-content__right {
+  width: 50%; }
+
+.social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.social-links__item {
+  margin-left: 20px; }
 
 .adress {
   font-size: 14px;
@@ -923,6 +941,16 @@ footer {
   font-family: 'ubuntu';
   font-weight: 900;
   color: #e25028; }
+
+.footer-content,
+.social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social-links .icon {
+  width: 32px; }
 
 .icon {
   display: inline-block;
