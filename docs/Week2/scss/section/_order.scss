@@ -1,0 +1,54 @@
+.order {
+    @include background('../images/order-bg.jpg');
+}
+
+.form__content {
+    display: flex;
+    max-width: 960px;
+}
+
+.form__content-left,
+.form__content-right {
+    width: 50%;
+}
+
+.form__block {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.form__block-title {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.form__input {
+    border: none;
+    border-radius: 4px;
+    line-height: 35px;
+    margin: 14px 10px;
+    padding: 0 5px;
+    width: inherit;
+}
+
+.form__content-left .form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__content-right .form__row {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.form__input--textarea {
+    height: 117px;
+}
+
+.form__block--radios {
+    width: initial;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}

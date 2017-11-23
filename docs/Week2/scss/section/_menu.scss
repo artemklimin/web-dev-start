@@ -1,44 +1,65 @@
-.menu__conteiner{
-	background-image: url('../images/menu_bg.jpg');
+.menu__conteiner {
+    background-image: url('../images/menu_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     height: 100%;
     flex-direction: row-reverse;
 }
-.menu__content{
-	position: relative;
-	width: 100%;
-	height: 100%;
+
+.menu__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.section__title--menu{
-	color: #fff;
-	position: absolute;
-	left: 90px;
-	top: 110px;
-	z-index: 10;
+
+.section__title--menu {
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    top: 110px;
+    z-index: 10;
 }
-.menu-acco{
-	position:absolute;
-	max-width: 71%;
-	height: 100%;
-	right: 0;
-	top: 0;
-	z-index: 15;
-	display: flex;
+
+.menu-acco {
+    position: absolute;
+    max-width: 71%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    display: flex;
 }
-.menu-acco__item{
+
+.menu-acco__item {
     display: flex;
     align-items: center;
 }
-.menu-acco__title{
+
+.menu-acco__item--meat {
+    background: url(../images/menu-meat-big.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.menu-acco__item--vegan {
+    background: url(../images/menu-vegan-big.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.menu-acco__item--diet {
+    background: url(../images/menu-diet-big.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.menu-acco__title {
     display: block;
     position: relative;
     min-width: 80px;
     height: 100%;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
 }
-.menu-acco__title-sub{
+
+.menu-acco__title-sub {
     transform: rotate(-90deg);
     display: block;
     position: absolute;
@@ -50,25 +71,31 @@
     font-family: 'gagalin';
     font-size: 40px;
 }
-.menu-acco__content{
+
+.menu-acco__content {
     height: 100%;
     width: 0;
     overflow: hidden;
-    background-color: rgba(47,50,52,.93);
+    background-color: rgba(47, 50, 52, .93);
     color: #fff;
 }
-.menu-acco__text{
+
+.menu-acco__text {
     padding: 60px 35px 35px 35px;
-	opacity: 0;
+    opacity: 0;
 }
-/*.menu-acco__item--active,*/ .menu-acco__item:hover{
-	.menu-acco__content{
-    	width: 100%;
-	}
-	.menu-acco__text{
-		opacity: 100;
-	}
-	.menu-acco__title-sub{
-		color: $yello;
-	}
+
+
+/*.menu-acco__item--active,*/
+
+.menu-acco__item:hover {
+    .menu-acco__content {
+        width: 100%;
+    }
+    .menu-acco__text {
+        opacity: 100;
+    }
+    .menu-acco__title-sub {
+        color: $yello;
+    }
 }
