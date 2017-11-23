@@ -63,6 +63,15 @@
     line-height: 1.42;
     text-transform: uppercase;
     transition: .5s;
+    cursor: pointer;
+}
+
+.any-button.any-button--no-fill {
+    background: transparent;
+    padding: 0;
+    margin-left: -10px;
+    text-transform: none;
+    min-width: min-content;
 }
 
 .arrow-scroll__link {

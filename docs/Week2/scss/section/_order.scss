@@ -46,9 +46,72 @@
     height: 117px;
 }
 
-.form__block--radios {
+.form__block--radios,
+.form__block--checkbox {
     width: initial;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.form__block--checkbox {
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.form__block--button {
+    width: min-content;
+}
+
+.form__block--radios .form__block-title,
+.form__block--checkbox .form__block-title {
+    margin-left: 35px;
+}
+
+.form__block--checkbox:before,
+.form__block--radios:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 10px;
+    position: relative;
+    background-color: #fff;
+    position: absolute;
+}
+
+.form__block--radios:before {
+    border-radius: 50%;
+}
+
+.form__input--radio {
+    display: none;
+}
+
+.form__input--checkbox {
+    display: none;
+}
+
+.form__block--radios:after,
+.form__block--checkbox:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    left: 14px;
+    top: 5px;
+    border-radius: 50%;
+}
+
+#change:checked+.form__block--radios:after,
+#pay-card:checked+.form__block--radios:after,
+#no-call:checked+.form__block--checkbox:after {
+    background-color: $orange;
+}
+
+#no-call:checked+.form__block--checkbox:after {
+    border-radius: 0%;
 }

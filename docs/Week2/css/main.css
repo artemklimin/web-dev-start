@@ -187,7 +187,17 @@ footer {
   text-transform: uppercase;
   -webkit-transition: .5s;
   -o-transition: .5s;
-  transition: .5s; }
+  transition: .5s;
+  cursor: pointer; }
+
+.any-button.any-button--no-fill {
+  background: transparent;
+  padding: 0;
+  margin-left: -10px;
+  text-transform: none;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content; }
 
 .arrow-scroll__link {
   position: fixed;
@@ -812,21 +822,107 @@ footer {
 .form__input--textarea {
   height: 117px; }
 
-.form__block--radios {
+.form__block--radios,
+.form__block--checkbox {
   width: initial;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer;
+  position: relative; }
+
+.form__block--checkbox {
+  margin-top: 24px;
+  margin-bottom: 10px; }
+
+.form__block--button {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content; }
+
+.form__block--radios .form__block-title,
+.form__block--checkbox .form__block-title {
+  margin-left: 35px; }
+
+.form__block--checkbox:before,
+.form__block--radios:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  left: 10px;
+  position: relative;
+  background-color: #fff;
+  position: absolute; }
+
+.form__block--radios:before {
+  border-radius: 50%; }
+
+.form__input--radio {
+  display: none; }
+
+.form__input--checkbox {
+  display: none; }
+
+.form__block--radios:after,
+.form__block--checkbox:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  left: 14px;
+  top: 5px;
+  border-radius: 50%; }
+
+#change:checked + .form__block--radios:after,
+#pay-card:checked + .form__block--radios:after,
+#no-call:checked + .form__block--checkbox:after {
+  background-color: #e25028; }
+
+#no-call:checked + .form__block--checkbox:after {
+  border-radius: 0%; }
+
+.map {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/map-tmp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer {
+  height: 58px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.footer-content {
+  max-width: 940px;
+  margin: 0 auto; }
+
+.adress {
+  font-size: 14px;
+  font-family: 'ubuntu';
+  font-weight: 300;
+  color: #fff; }
+
+.phone__link {
+  font-size: 14px;
+  font-family: 'ubuntu';
+  font-weight: 900;
+  color: #e25028; }
 
 .icon {
   display: inline-block;
