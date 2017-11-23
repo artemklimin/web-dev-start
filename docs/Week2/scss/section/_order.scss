@@ -4,7 +4,7 @@
 
 .form__content {
     display: flex;
-    max-width: 960px;
+    max-width: rem(960px);
 }
 
 .form__content-left,
@@ -14,21 +14,21 @@
 
 .form__block {
     width: 100%;
-    margin: 0 10px;
+    margin: 0 rem(10px);
 }
 
 .form__block-title {
     color: #fff;
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: rem(14px);
+    margin-left: rem(10px);
 }
 
 .form__input {
     border: none;
-    border-radius: 4px;
-    line-height: 35px;
-    margin: 14px 10px;
-    padding: 0 5px;
+    border-radius: rem(4px);
+    line-height: rem(35px);
+    margin: rem(14px) rem(10px);
+    padding: 0 rem(5px);
     width: inherit;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .form__input--textarea {
-    height: 117px;
+    height: rem(117px);
 }
 
 .form__block--radios,
@@ -56,26 +56,26 @@
 }
 
 .form__block--checkbox {
-    margin-top: 24px;
-    margin-bottom: 10px;
+    margin-top: rem(24px);
+    margin-bottom: rem(10px);
 }
 
 .form__block--button {
-    width: min-content;
+    max-width: min-content;
 }
 
 .form__block--radios .form__block-title,
 .form__block--checkbox .form__block-title {
-    margin-left: 35px;
+    margin-left: rem(35px);
 }
 
 .form__block--checkbox:before,
 .form__block--radios:before {
     content: "";
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    left: 10px;
+    width: rem(16px);
+    height: rem(16px);
+    left: rem(10px);
     position: relative;
     background-color: #fff;
     position: absolute;
@@ -98,11 +98,11 @@
     content: "";
     display: block;
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: rem(8px);
+    height: rem(8px);
     background-color: transparent;
-    left: 14px;
-    top: 5px;
+    left: rem(14px);
+    top: rem(5px);
     border-radius: 50%;
 }
 
@@ -114,4 +114,10 @@
 
 #no-call:checked+.form__block--checkbox:after {
     border-radius: 0%;
+}
+
+.any-button--order {
+    background-color: #e25028;
+    max-width: min-content;
+    text-align: center;
 }

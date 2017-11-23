@@ -5,7 +5,7 @@
 }
 
 .footer {
-    height: 58px;
+    height: rem(58px);
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -15,7 +15,7 @@
 }
 
 .footer-content {
-    max-width: 940px;
+    max-width: rem(940px);
     margin: 0 auto;
 }
 
@@ -24,24 +24,33 @@
     width: 50%;
 }
 
+.footer-content__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .social-links {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    height: rem(58px);
 }
 
 .social-links__item {
-    margin-left: 20px;
+    margin-left: rem(20px);
 }
 
 .adress {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'ubuntu';
     font-weight: 300;
     color: #fff;
 }
 
 .phone__link {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'ubuntu';
     font-weight: 900;
     color: $orange;
@@ -53,5 +62,5 @@
 }
 
 .social-links .icon {
-    width: 32px;
+    width: rem(32px);
 }

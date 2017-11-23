@@ -47,7 +47,7 @@
 
 .people-list__item .people-list__item-info {
     z-index: 10;
-    padding: 50px 20px 20px 20px;
+    padding: rem(50px) rem(20px) rem(20px) rem(20px);
 }
 
 .people-list__item-info {
@@ -98,17 +98,17 @@
 .people-list__item-title {
     color: #fff;
     font-family: gagalin;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: rem(14px);
+    margin-bottom: rem(20px);
     line-height: 1.42;
 }
 
 .people-list__item-body {
     color: #fff;
     font-family: 'ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 1.42;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
 }

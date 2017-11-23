@@ -16,8 +16,8 @@
 .section__title--menu {
     color: #fff;
     position: absolute;
-    left: 90px;
-    top: 110px;
+    left: rem(90px);
+    top: rem(110px);
     z-index: 10;
 }
 
@@ -54,7 +54,7 @@
 .menu-acco__title {
     display: block;
     position: relative;
-    min-width: 80px;
+    min-width: rem(80px);
     height: 100%;
     background: rgba(0, 0, 0, .7);
 }
@@ -63,13 +63,13 @@
     transform: rotate(-90deg);
     display: block;
     position: absolute;
-    width: 300px;
+    width: rem(300px);
     text-align: center;
     top: 50%;
-    left: -110px;
+    left: rem(-110px);
     color: #fff;
     font-family: 'gagalin';
-    font-size: 40px;
+    font-size: rem(40px);
 }
 
 .menu-acco__content {
@@ -81,7 +81,7 @@
 }
 
 .menu-acco__text {
-    padding: 60px 35px 35px 35px;
+    padding: rem(60px) rem(35px) rem(35px) rem(35px);
     opacity: 0;
 }
 

@@ -40,10 +40,18 @@
   font-weight: normal;
   font-style: normal; }
 
+html {
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 14px; } }
+
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: 'ubuntu', 'Arial', 'Helvetica', 'sans-serif';
   line-height: 1.42;
   color: #2f3234;
@@ -94,9 +102,9 @@ footer {
 
 .visuallyhyden:not(:focus):not(active) {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -108,8 +116,7 @@ footer {
 .section {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.31);
-  min-width: 940px;
-  min-height: 650px;
+  min-height: 40.625rem;
   position: relative; }
   .section_centered {
     display: -webkit-box;
@@ -127,7 +134,7 @@ footer {
     justify-content: center; }
 
 .conteiner {
-  max-width: 940px;
+  max-width: 58.75rem;
   width: 95%;
   margin: 0 auto;
   position: relative;
@@ -153,12 +160,11 @@ footer {
   width: 100%;
   min-height: 100%;
   position: relative;
-  min-width: 960px;
   overflow: hidden; }
 
 .maincontent {
   height: 100%;
-  min-height: 650px;
+  min-height: 40.625rem;
   position: relative; }
 
 .conteiner--full {
@@ -169,19 +175,19 @@ footer {
 .section__title {
   color: #f8b43a;
   font-family: 'gagalin';
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
   line-height: 1.42;
   margin: 0; }
 
 .any-button {
   min-width: 6.125rem;
-  padding: 10px 17px;
-  border-radius: 5px;
+  padding: 0.625rem 1.0625rem;
+  border-radius: 0.3125rem;
   background-color: #e25028;
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -193,25 +199,22 @@ footer {
 .any-button.any-button--no-fill {
   background: transparent;
   padding: 0;
-  margin-left: -10px;
-  text-transform: none;
-  min-width: -webkit-min-content;
-  min-width: -moz-min-content;
-  min-width: min-content; }
+  margin-left: 0rem;
+  text-transform: none; }
 
 .arrow-scroll__link {
   position: fixed;
   top: 95%;
   left: 50%;
   display: block;
-  width: 30px;
-  margin-left: -15px;
-  height: 16px;
+  width: 1.875rem;
+  margin-left: 0rem;
+  height: 1rem;
   z-index: 50; }
 
 .arrow-scroll__link svg {
-  width: 30px;
-  height: 16px;
+  width: 1.875rem;
+  height: 1rem;
   fill: #fff; }
 
 .aside {
@@ -263,12 +266,12 @@ footer {
 .hero__img:before {
   background: url(../images/drops.png) no-repeat;
   content: "";
-  width: 451px;
-  height: 241px;
+  width: 28.1875rem;
+  height: 15.0625rem;
   position: absolute;
   z-index: 1;
-  margin-top: 60px;
-  margin-left: -32px; }
+  margin-top: 3.75rem;
+  margin-left: -2rem; }
 
 .header {
   width: 100%;
@@ -284,7 +287,7 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 10px; }
+  padding-top: 0.625rem; }
 
 .header__logo {
   margin-right: auto; }
@@ -304,17 +307,17 @@ footer {
     display: inline-block;
     vertical-align: middle;
     content: "";
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 0.15625rem;
     background-color: #fff;
-    margin: 0 12px; }
+    margin: 0 0.75rem; }
   .nav__item:last-child:after {
     display: none; }
 
 .nav__link {
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -389,12 +392,12 @@ footer {
   justify-content: center; }
 
 .section__title--hero {
-  padding-top: 60px; }
+  padding-top: 3.75rem; }
 
 .hero__descroption-text {
   color: #fff;
   font-family: 'lifehack';
-  font-size: 65px;
+  font-size: 4.0625rem;
   font-weight: 500;
   line-height: 1; }
 
@@ -445,26 +448,26 @@ footer {
   text-align: center; }
 
 .promo-item {
-  padding: 0 5px;
-  width: 300px; }
+  padding: 0 0.3125rem;
+  width: 18.75rem; }
 
 .promo-item__title {
   color: #2f3234;
   font-family: 'lifehack';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.42;
   margin: 0;
-  padding-top: 30px; }
+  padding-top: 1.875rem; }
 
 .promo-item__body {
   color: #2f3234;
   font-family: 'ubuntu';
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.42;
   margin: 0;
-  padding-top: 15px; }
+  padding-top: 0.9375rem; }
 
 .any-button--more {
   background-color: #2f3234;
@@ -522,7 +525,7 @@ footer {
 
 .people-list__item .people-list__item-info {
   z-index: 10;
-  padding: 50px 20px 20px 20px; }
+  padding: 3.125rem 1.25rem 1.25rem 1.25rem; }
 
 .people-list__item-info {
   opacity: 0;
@@ -563,18 +566,18 @@ footer {
 .people-list__item-title {
   color: #fff;
   font-family: gagalin;
-  font-size: 14px;
-  margin-bottom: 20px;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
   line-height: 1.42; }
 
 .people-list__item-body {
   color: #fff;
   font-family: 'ubuntu';
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.42;
   margin: 0;
-  padding-bottom: 20px; }
+  padding-bottom: 1.25rem; }
 
 .team__conteiner {
   background-image: url("../images/team_bg.jpg");
@@ -688,8 +691,8 @@ footer {
 .section__title--menu {
   color: #fff;
   position: absolute;
-  left: 90px;
-  top: 110px;
+  left: 5.625rem;
+  top: 6.875rem;
   z-index: 10; }
 
 .menu-acco {
@@ -729,7 +732,7 @@ footer {
 .menu-acco__title {
   display: block;
   position: relative;
-  min-width: 80px;
+  min-width: 5rem;
   height: 100%;
   background: rgba(0, 0, 0, 0.7); }
 
@@ -739,13 +742,13 @@ footer {
   transform: rotate(-90deg);
   display: block;
   position: absolute;
-  width: 300px;
+  width: 18.75rem;
   text-align: center;
   top: 50%;
-  left: -110px;
+  left: -6.875rem;
   color: #fff;
   font-family: 'gagalin';
-  font-size: 40px; }
+  font-size: 2.5rem; }
 
 .menu-acco__content {
   height: 100%;
@@ -755,7 +758,7 @@ footer {
   color: #fff; }
 
 .menu-acco__text {
-  padding: 60px 35px 35px 35px;
+  padding: 3.75rem 2.1875rem 2.1875rem 2.1875rem;
   opacity: 0; }
 
 /*.menu-acco__item--active,*/
@@ -779,7 +782,7 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 960px; }
+  max-width: 60rem; }
 
 .form__content-left,
 .form__content-right {
@@ -787,19 +790,19 @@ footer {
 
 .form__block {
   width: 100%;
-  margin: 0 10px; }
+  margin: 0 0.625rem; }
 
 .form__block-title {
   color: #fff;
-  font-size: 14px;
-  margin-left: 10px; }
+  font-size: 0.875rem;
+  margin-left: 0.625rem; }
 
 .form__input {
   border: none;
-  border-radius: 4px;
-  line-height: 35px;
-  margin: 14px 10px;
-  padding: 0 5px;
+  border-radius: 0.25rem;
+  line-height: 2.1875rem;
+  margin: 0.875rem 0.625rem;
+  padding: 0 0.3125rem;
   width: inherit; }
 
 .form__content-left .form__row {
@@ -820,7 +823,7 @@ footer {
   /*justify-content: space-between;*/ }
 
 .form__input--textarea {
-  height: 117px; }
+  height: 7.3125rem; }
 
 .form__block--radios,
 .form__block--checkbox {
@@ -837,25 +840,25 @@ footer {
   position: relative; }
 
 .form__block--checkbox {
-  margin-top: 24px;
-  margin-bottom: 10px; }
+  margin-top: 1.5rem;
+  margin-bottom: 0.625rem; }
 
 .form__block--button {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content; }
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content; }
 
 .form__block--radios .form__block-title,
 .form__block--checkbox .form__block-title {
-  margin-left: 35px; }
+  margin-left: 2.1875rem; }
 
 .form__block--checkbox:before,
 .form__block--radios:before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  left: 10px;
+  width: 1rem;
+  height: 1rem;
+  left: 0.625rem;
   position: relative;
   background-color: #fff;
   position: absolute; }
@@ -874,11 +877,11 @@ footer {
   content: "";
   display: block;
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 0.5rem;
+  height: 0.5rem;
   background-color: transparent;
-  left: 14px;
-  top: 5px;
+  left: 0.875rem;
+  top: 0.3125rem;
   border-radius: 50%; }
 
 #change:checked + .form__block--radios:after,
@@ -889,6 +892,13 @@ footer {
 #no-call:checked + .form__block--checkbox:after {
   border-radius: 0%; }
 
+.any-button--order {
+  background-color: #e25028;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  text-align: center; }
+
 .map {
   width: 100%;
   height: 100%;
@@ -898,7 +908,7 @@ footer {
   background-size: cover; }
 
 .footer {
-  height: 58px;
+  height: 3.625rem;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -910,34 +920,59 @@ footer {
   background-size: cover; }
 
 .footer-content {
-  max-width: 940px;
+  max-width: 58.75rem;
   margin: 0 auto; }
 
 .footer-content__left,
 .footer-content__right {
   width: 50%; }
 
+.footer-content__left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 .social-links {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3.625rem; }
 
 .social-links__item {
-  margin-left: 20px; }
+  margin-left: 1.25rem; }
 
 .adress {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'ubuntu';
   font-weight: 300;
   color: #fff; }
 
 .phone__link {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'ubuntu';
   font-weight: 900;
   color: #e25028; }
@@ -950,7 +985,7 @@ footer {
   display: flex; }
 
 .social-links .icon {
-  width: 32px; }
+  width: 2rem; }
 
 .icon {
   display: inline-block;

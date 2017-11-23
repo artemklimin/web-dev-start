@@ -9,12 +9,12 @@
 .hero__img:before {
     background: url(../images/drops.png) no-repeat;
     content: "";
-    width: 451px;
-    height: 241px;
+    width: rem(451px);
+    height: rem(241px);
     position: absolute;
     z-index: 1;
-    margin-top: 60px;
-    margin-left: -32px;
+    margin-top: rem(60px);
+    margin-left: rem(-32px);
 }
 
 .header {
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: rem(10px);
 }
 
 .header__logo {
@@ -46,9 +46,9 @@
         display: inline-block;
         vertical-align: middle;
         content: "";
-        @include circle(5px,
+        @include circle(rem(5px),
         #fff);
-        margin: 0 12px;
+        margin: 0 rem(12px);
     }
     &:last-child:after {
         display: none;
@@ -57,7 +57,7 @@
 
 .nav__link {
     color: #fff;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     text-transform: uppercase;
@@ -100,13 +100,13 @@
 }
 
 .section__title--hero {
-    padding-top: 60px;
+    padding-top: rem(60px);
 }
 
 .hero__descroption-text {
     color: #fff;
     font-family: 'lifehack';
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;
     line-height: 1;
 }

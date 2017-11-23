@@ -1,6 +1,7 @@
 //*config
 @import "config/_variables";
 @import "config/_mixins";
+@import "config/_media";
 //*base
 @import "layout/_fonts";
 @import "layout/_base";
@@ -15,3 +16,6 @@
 @import "section/_order";
 @import "section/_contacts";
 @import "_sprite.scss";
+//*resolutions
+$tablets: 768px;
+$phones: 480px;

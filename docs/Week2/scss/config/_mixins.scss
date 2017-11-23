@@ -5,13 +5,21 @@
     background-color: $color;
 }
 
-@function rem($px) {
-    @return $px / 16px+0rem;
-}
-
 @mixin background($url) {
     background-image: url($url);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
 }
