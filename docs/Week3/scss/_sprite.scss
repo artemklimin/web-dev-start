@@ -1,0 +1,14 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    fill: $dark;
+    width: 100px;
+    height: 100px;
+    &:hover {
+        fill: #000;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+}

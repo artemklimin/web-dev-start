@@ -1,0 +1,76 @@
+.hero {
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        //background: url(../images/tmp/2.jpg) center no-repeat;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        @include phones {
+            background: url(../images/tmp/1-480.jpg) center no-repeat;
+        }
+    }
+}
+
+.best {
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background: url(../images/tmp/2.jpg) center no-repeat;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        @include tablets {
+            background: url(../images/tmp/2-768.jpg) center no-repeat;
+        }
+        @include phones {
+            background: url(../images/tmp/2-480.jpg) center no-repeat;
+        }
+    }
+}
+
+.team {
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        //background: url(../images/tmp/4.jpg) center no-repeat;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        @include tablets {
+            background: url(../images/tmp/4-768.jpg) center no-repeat;
+        }
+        @include phones {
+            background: url(../images/tmp/4-480.jpg) center no-repeat;
+        }
+    }
+}
+
+.order {
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background: url(../images/tmp/order.jpg) center no-repeat;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        @include tablets {
+            background: url(../images/tmp/order-768.jpg) center no-repeat;
+        }
+        @include phones {
+            background: url(../images/tmp/order-480.jpg) center no-repeat;
+        }
+    }
+}
+
+.promo-item__icon {
+    outline: 1px solid #000;
+}

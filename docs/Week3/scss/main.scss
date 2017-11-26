@@ -1,0 +1,23 @@
+//*config
+@import "config/_variables";
+@import "config/_mixins";
+@import "config/_media";
+//*base
+@import "layout/_fonts";
+@import "layout/_base";
+@import "layout/_adjustment";
+@import "layout/_aside";
+//*pixel perfect
+//@import "_x_pp";
+//*section
+@import "section/_hero";
+@import "section/_best";
+@import "section/_people";
+@import "section/_team";
+@import "section/_menu";
+@import "section/_order";
+@import "section/_contacts";
+@import "_sprite.scss";
+//*resolutions
+$tablets: 768px;
+$phones: 480px;

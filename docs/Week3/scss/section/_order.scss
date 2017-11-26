@@ -1,0 +1,221 @@
+.order {
+    @include background('../images/order-bg.jpg');
+}
+
+.form__content {
+    display: flex;
+    max-width: rem(960px);
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 0 20%;
+    }
+    @include tablets {
+        padding: 0 18.1%;
+    }
+    @include phones {
+        padding: 0;
+    }
+}
+
+.form {
+    @include phones {
+        width: 95%;
+    }
+}
+
+.form__content-left,
+.form__content-right {
+    width: 50%;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.form__block {
+    width: 100%;
+    margin: 0 rem(10px);
+}
+
+.form__block-title {
+    color: #fff;
+    font-size: rem(14px);
+    margin-left: 0;
+    @include phones {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+.form__input {
+    border: none;
+    border-radius: rem(4px);
+    line-height: rem(35px);
+    margin: 0.3rem 0.625rem 1rem;
+    padding: 0 rem(5px);
+    width: inherit;
+    margin-left: 0;
+    @include tablets {
+        margin: 0.7rem 0.625rem 1rem;
+        margin-left: 0;
+    }
+    @include phones {
+        margin-left: 0;
+        line-height: 2.3875rem;
+    }
+}
+
+.form__content-left .form__row {
+    display: flex;
+    justify-content: space-between;
+    @include phones {
+        justify-content: space-around;
+        width: 104.2%;
+        margin-left: -2.1%;
+    }
+}
+
+.form__content-right .form__row {
+    display: flex;
+    @include tablets {
+        &:last-child {
+            margin-top: 1.3rem;
+        }
+    }
+    @include phones {
+        justify-content: center;
+        width: 104.2%;
+        margin-left: -2.1%;
+    }
+}
+
+.form__input--textarea {
+    height: 6.6rem;
+    @include tablets {
+        height: 7rem;
+    }
+}
+
+.form__block--radios,
+.form__block--checkbox {
+    width: initial;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0.4rem;
+    @include tablets {
+        margin-right: 1rem;
+    }
+    @include phones {
+        left: 0;
+        margin-top: 1.3rem;
+    }
+}
+
+.form__block--checkbox {
+    margin-top: rem(24px);
+    margin-bottom: rem(10px);
+    &before {}
+    @include phones {
+        margin-top: 2.2rem;
+    }
+}
+
+.form__block--radios {
+    &before {}
+}
+
+.form__block--button {
+    max-width: min-content;
+    margin-right: 0;
+}
+
+.form__block--radios .form__block-title,
+.form__block--checkbox .form__block-title {
+    margin-left: rem(35px);
+}
+
+.form__block--checkbox:before,
+.form__block--radios:before {
+    content: "";
+    display: inline-block;
+    width: rem(16px);
+    height: rem(16px);
+    left: rem(10px);
+    position: relative;
+    background-color: #fff;
+    position: absolute;
+    @include phones {
+        left: 0;
+        top: 1px;
+    }
+}
+
+.form__block--radios:before {
+    border-radius: 50%;
+}
+
+.form__input--radio {
+    display: none;
+}
+
+.form__input--checkbox {
+    display: none;
+}
+
+.form__block--radios:after,
+.form__block--checkbox:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(8px);
+    height: rem(8px);
+    background-color: transparent;
+    left: rem(14px);
+    top: rem(5px);
+    border-radius: 50%;
+}
+
+#change:checked+.form__block--radios:after,
+#pay-card:checked+.form__block--radios:after,
+#no-call:checked+.form__block--checkbox:after {
+    background-color: $orange;
+}
+
+#no-call:checked+.form__block--checkbox:after {
+    border-radius: 0%;
+}
+
+.any-button--order {
+    background-color: #e25028;
+    max-width: min-content;
+    text-align: center;
+    font-weight: 900;
+    @include tablets {
+        min-width: 6.4rem;
+    }
+    @include phones {
+        font-size: 0.83em;
+    }
+}
+
+.section__title--order {
+    margin-bottom: rem(62px);
+    margin-top: rem(-82px);
+    @include tablets {
+        margin-top: -9.7rem;
+        letter-spacing: 0.16rem;
+        margin-bottom: 4.3rem;
+    }
+    @include phones {
+        line-height: 1.2;
+        font-size: 3.6rem;
+        text-align: center;
+        margin-top: 0;
+        letter-spacing: 0.06rem;
+        margin-bottom: 1.8rem;
+    }
+}
