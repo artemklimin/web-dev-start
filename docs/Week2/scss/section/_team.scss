@@ -4,55 +4,108 @@
     background-repeat: no-repeat;
     display: flex;
     height: 100%;
+    width: 100%;
     flex-direction: row-reverse;
+    background-position: center;
 }
 
 .team__content {
     width: 50%;
     padding: 5rem;
-    background-color: rgba(47,50,52,.93);
+    background-color: rgba(47, 50, 52, .93);
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
+    @include phones {
+        padding-top: 1.9rem;
+    }
 }
-.team-acco__item{
-	margin-bottom: 35px;
-	&:first-child{
-		padding-top: 90px;
-	}
+
+.team-acco {
+    @include tablets {
+        width: 56%;
+        margin: 0 auto;
+    }
+    @include phones {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -2rem;
+    }
 }
-.team-acco__trigger{
-	color: #fff;
+
+.team-acco__item {
+    margin-bottom: rem(35px);
+    &:first-child {
+        padding-top: 110px;
+    }
+    @include tablets {
+        margin-bottom: 0.85rem;
+    }
+    @include phones {
+        margin-bottom: 0.8rem;
+    }
+}
+
+.team-acco__trigger {
+    color: #fff;
     font-family: 'gagalin';
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.42;
     margin: 0;
     text-decoration: none;
-    &:before{
-    	content: "";
-    	width: 9;
-    	height: 6;
-    	display: inline-block;
-    	border: 6px solid transparent;
-    	border-top-color: $yello;
-    	border-bottom-width: 0;
-    	padding-bottom:3px;
-    	margin-right: 5px;
-    }	
+    &:before {
+        content: "";
+        width: rem(9px);
+        height: rem(6px);
+        display: inline-block;
+        border: rem(6px) solid transparent;
+        border-top-color: $yello;
+        border-bottom-width: 0;
+        padding-bottom: rem(3px);
+        margin-right: rem(5px);
+    }
+    @include tablets {
+        font-size: 1.6rem;
+    }
+    @include phones {
+        font-size: 1.7rem;
+    }
 }
-.taeam-acco__content{
+
+.taeam-acco__content {
     display: flex;
-    padding-top: 12px;
-	height: 0;
-	overflow: hidden;
+    padding-top: 0.975rem;
+    height: 0;
+    overflow: hidden;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 .team-acco__item--active {
-	.taeam-acco__content{
-	height: initial;
-	}
-	.team-acco__trigger{
-		color: $yello;
-	}
+    .taeam-acco__content {
+        height: initial;
+    }
+    .team-acco__trigger {
+        color: $yello;
+    }
 }
-.team-acco__pic{
+
+.section__title--team {
+    @include tablets {
+        margin-top: 1.5rem;
+        letter-spacing: 0.16rem;
+    }
+    @include phones {
+        font-size: 3.5rem;
+        letter-spacing: 0rem;
+    }
+}
+
+.team-acco__pic {
     display: flex;
     margin: 0 15px;
     width: 100px;
@@ -61,18 +114,32 @@
     border-radius: 50%;
     overflow: hidden;
     justify-content: center;
+    @include tablets {
+        margin-top: -0.15rem;
+    }
 }
-.team-acco__text-title{
-	font-family: 'ubuntu';
-	font-size: 14px;
-	font-weight: bold;
-	color: #fff;
-	padding-top: 10px;
+
+.team-acco__text-title {
+    font-family: 'ubuntu';
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: #fff;
+    padding-top: rem(18px);
+    @include phones {
+        padding-top: 1.325rem;
+    }
 }
-.team-acco__text-content{
-	font-family: 'ubuntu';
-	font-size: 14px;
-	font-weight: 500;
-	color: #fff;
-	padding-top: 15px;
+
+.team-acco__text-content {
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding: 1rem 0;
+    @include tablets {
+        line-height: 1.5rem;
+    }
+    @include phones {
+        line-height: 1.7rem;
+    }
 }

@@ -71,21 +71,6 @@
     padding: 0;
     margin-left: rem(0px);
     text-transform: none;
-}
-
-.arrow-scroll__link {
-    position: fixed;
-    top: 95%;
-    left: 50%;
-    display: block;
-    width: rem(30px);
-    margin-left: rem(0px);
-    height: rem(16px);
-    z-index: 50;
-}
-
-.arrow-scroll__link svg {
-    width: rem(30px);
-    height: rem(16px);
-    fill: #fff;
+    font-family: ubuntu;
+    font-size: 0.85rem;
 }

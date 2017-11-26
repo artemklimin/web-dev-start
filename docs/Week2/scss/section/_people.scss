@@ -26,6 +26,11 @@
     height: 50%;
     position: relative;
     background: #000;
+    @include tablets {
+        width: 50%;
+        text-align: center;
+        height: 25%;
+    }
 }
 
 .people-list__item .people-list__item-photo,
@@ -64,35 +69,43 @@
 }
 
 .people-list__item--01 .people-list__item-photo {
-    background-image: url(../images/foto-01c.jpg);
+    background: url(../images/foto-01c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--02 .people-list__item-photo {
-    background-image: url(../images/foto-02c.jpg);
+    background: url(../images/foto-02c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--03 .people-list__item-photo {
-    background-image: url(../images/foto-03c.jpg);
+    background: url(../images/foto-03c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--04 .people-list__item-photo {
-    background-image: url(../images/foto-04c.jpg);
+    background: url(../images/foto-04c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--05 .people-list__item-photo {
-    background-image: url(../images/foto-05c.jpg);
+    background: url(../images/foto-05c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--06 .people-list__item-photo {
-    background-image: url(../images/foto-06c.jpg);
+    background: url(../images/foto-06c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--07 .people-list__item-photo {
-    background-image: url(../images/foto-07c.jpg);
+    background: url(../images/foto-07c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item--08 .people-list__item-photo {
-    background-image: url(../images/foto-08c.jpg);
+    background: url(../images/foto-08c.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .people-list__item-title {

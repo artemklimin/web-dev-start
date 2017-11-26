@@ -12,16 +12,31 @@
     bottom: 0;
     left: 0;
     @include background('../images/footer-bg.jpg');
+    @include tablets {
+        padding: 0 24px;
+    }
+    @include phones {
+        height: 7rem;
+        padding-top: 1rem;
+    }
 }
 
 .footer-content {
     max-width: rem(940px);
     margin: 0 auto;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
 }
 
 .footer-content__left,
 .footer-content__right {
     width: 50%;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer-content__left {
@@ -36,10 +51,18 @@
     justify-content: flex-end;
     align-items: center;
     height: rem(58px);
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .social-links__item {
     margin-left: rem(20px);
+    &:first-child {
+        @include phones {
+            margin-left: 0;
+        }
+    }
 }
 
 .adress {
@@ -63,4 +86,7 @@
 
 .social-links .icon {
     width: rem(32px);
+    @include phones {
+        width: rem(20px);
+    }
 }

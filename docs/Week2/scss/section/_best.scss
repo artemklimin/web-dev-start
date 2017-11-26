@@ -6,44 +6,113 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include phones {
+        align-items: self-start;
+    }
+}
+
+.conteiner--best {
+    margin-top: -8rem;
+    @include tablets {
+        margin-top: 0;
+    }
 }
 
 .section__title--best {
     color: #2f3234;
     padding: 0;
-    margin-bottom: rem(60px);
+    margin-bottom: 3.9rem;
+    @include tablets {
+        margin-bottom: 10.5rem;
+        margin-top: -17.6rem;
+        letter-spacing: 0.17rem;
+    }
+    @include phones {
+        margin-top: 2.9rem;
+        font-size: 3.4rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .promo {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-flow: row;
     vertical-align: top;
     text-align: center;
+    @include tablets {
+        justify-content: space-between;
+    }
+    @include phones {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .promo-item {
     padding: 0 rem(5px);
-    width: rem(300px);
+    width: rem(313px);
+    @include tablets {
+        width: 31%;
+    }
+    @include phones {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 3.9rem;
+        &:last-child {
+            .promo-item__icon {
+                margin-top: -1.8rem;
+            }
+        }
+    }
+}
+
+.promo-item__icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    @include phones {
+        padding: 0 rem(26px) 0 rem(16px);
+    }
+}
+
+.promo-item__content {
+    @include phones {
+        margin-left: 2.4rem;
+    }
 }
 
 .promo-item__title {
     color: $dark;
     font-family: 'lifehack';
-    font-size: rem(24px);
+    font-size: 1.68rem;
     font-weight: 400;
-    line-height: 1.42;
+    line-height: 1.8rem;
     margin: 0;
-    padding-top: rem(30px);
+    padding-top: 1.5rem;
+    letter-spacing: rem(-1.7px);
+    @include tablets {
+        letter-spacing: -0.08rem;
+    }
+    @include phones {
+        padding-top: 0;
+        letter-spacing: -0.03rem;
+    }
 }
 
 .promo-item__body {
-    color: $dark;
+    color: rgba(47, 50, 52, 0.8);
     font-family: 'ubuntu';
-    font-size: rem(14px);
+    font-size: 0.9rem;
     font-weight: 300;
-    line-height: 1.42;
+    line-height: 1.45rem;
     margin: 0;
     padding-top: rem(15px);
+    @include tablets {
+        line-height: 1.6rem;
+    }
 }

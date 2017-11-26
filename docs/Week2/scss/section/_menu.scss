@@ -5,6 +5,9 @@
     display: flex;
     height: 100%;
     flex-direction: row-reverse;
+    @include phones {
+        background-position: 30%;
+    }
 }
 
 .menu__content {
@@ -19,6 +22,15 @@
     left: rem(90px);
     top: rem(110px);
     z-index: 10;
+    @include tablets {
+        left: rem(24px);
+        top: rem(150px);
+    }
+    @include phones {
+        left: 4.5rem;
+        top: 2rem;
+        font-size: 3.8rem;
+    }
 }
 
 .menu-acco {
@@ -29,6 +41,9 @@
     top: 0;
     z-index: 15;
     display: flex;
+    @include tablets {
+        max-width: 100%;
+    }
 }
 
 .menu-acco__item {
@@ -64,12 +79,14 @@
     display: block;
     position: absolute;
     width: rem(300px);
-    text-align: center;
-    top: 50%;
-    left: rem(-110px);
+    bottom: rem(160px);
+    left: -7rem;
     color: #fff;
     font-family: 'gagalin';
-    font-size: rem(40px);
+    font-size: 2.7rem;
+    @include phones {
+        bottom: 12.7rem;
+    }
 }
 
 .menu-acco__content {

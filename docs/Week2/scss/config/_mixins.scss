@@ -23,3 +23,9 @@
         @content;
     }
 }
+
+@mixin smaller {
+    @media screen and (max-width: $smaller) {
+        @content;
+    }
+}
