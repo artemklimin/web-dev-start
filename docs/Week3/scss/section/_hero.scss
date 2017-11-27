@@ -205,6 +205,8 @@
     margin-bottom: 3px;
     margin-left: 10px;
     border-radius: 2px;
+    z-index: 200;
+    transition: all 0.2s ease-in-out;
     &:before {
         width: 24px;
         height: 4px;
@@ -232,6 +234,20 @@
     }
 }
 
+.close-menu {
+    .humburger-menu-link__icon {
+        background: transparent;
+        &:before {
+            transform: rotate(45deg);
+            top: 0px;
+        }
+        &:after {
+            transform: rotate(-45deg);
+            bottom: 0px;
+        }
+    }
+}
+
 .arrow-scroll__link {
     position: absolute;
     top: 95%;
@@ -247,4 +263,34 @@
     width: rem(30px);
     height: rem(16px);
     fill: #fff;
+}
+
+.show-menu {
+    .nav {
+        width: 100%;
+        height: 100%;
+        .nav__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            .nav__item {
+                .nav__link {
+                    font-size: rem(24px);
+                    text-decoration: none;
+                }
+                &:after {
+                    display: block;
+                    margin: rem(20px) auto;
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
