@@ -103,9 +103,9 @@
 }
 
 
-/*.menu-acco__item--active,*/
+/*.menu-acco__item:hover*/
 
-.menu-acco__item:hover {
+.menu-acco__item--active {
     .menu-acco__content {
         width: 100%;
     }

@@ -46,8 +46,65 @@
     left: 0;
 }
 
+.people-list__item--active {
+    .people-list__item-container {
+        @include phones {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            .people-list__item-info {
+                height: min-content;
+                padding: 10px;
+                width: 95%;
+                margin-left: 2.5%;
+                top: 40%;
+                background: #fff;
+                border-radius: 5px;
+                opacity: 1;
+                .people-list__read-more {
+                    display: none;
+                }
+                .people-list__item-title {
+                    color: $dark;
+                    text-align: left;
+                    font-size: 1rem;
+                }
+                .people-list__item-body {
+                    color: $dark;
+                    text-align: left;
+                    padding-bottom: 10px;
+                }
+            }
+            &:before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(47, 50, 52, 0.92);
+                z-index: -1;
+            }
+        }
+    }
+}
+
 .people-list__item:hover .people-list__item-photo {
     filter: grayscale(100%) opacity(30%);
+    @include phones {
+        filter: grayscale(100%) opacity(100%);
+    }
 }
 
 .people-list__item .people-list__item-info {

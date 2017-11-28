@@ -134,7 +134,7 @@
                 <div class="slider__conteiner ">
                     <div class="slider__nav-left ">
                         <div class="arrow-scroll-left ">
-                            <a href="# " class="arrow-scroll__link--left ">
+                            <a href="# " class="arrow-scroll__link--left " id="prev">
                                 <svg class="icon ">
                                             <use xlink:href="icons/sprite/sprite.svg#arrow-scroll " />
                                         </svg>
@@ -142,19 +142,91 @@
                         </div>
                     </div>
                     <ul class="slider__slides">
-                        <li class="slides-item slider__slides-item1">
+                        <li class="slides-item slider__slides-item1 first-slide active">
                             <div class="slider__content ">
                                 <div class="slider__content-left">
-                                    <a class="slider__content-iclude">
-                                        <div class="slider__content-iclude-icon">
+                                    <a class="slider__content-include" id="content-include-button1">
+                                        <div class="slider__content-include-icon">
                                             <svg class="icon ">
                                                 <use xlink:href="icons/sprite/sprite.svg#include " />
                                             </svg>
                                         </div>
-                                        <div class="slider__content-iclude-text" id="include-button">
+                                        <div class="slider__content-include-text">
                                             Состав
                                         </div>
                                     </a>
+                                    <div class="slider__content-include-content" id="content-include1">
+                                        <ul class="include-content__conteiner">
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#beef " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Говядина
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    300 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#buns " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Булочки
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    100 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#salad " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Зелень
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    70 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#sauce " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Соус
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    150 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cucumber " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Овощи
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    200 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cheese " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Сыр
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    80 г
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="close"></div>
+                                    </div>
+
                                     <img src="images/dark-burger.png" class="slider__content-big-img">
                                     <div class="slider__content-kkal">
                                         <svg class="icon ">
@@ -181,16 +253,88 @@
                         <li class="slides-item slider__slides-item2">
                             <div class="slider__content ">
                                 <div class="slider__content-left">
-                                    <a class="slider__content-iclude">
-                                        <div class="slider__content-iclude-icon">
+                                    <a class="slider__content-include" id="content-include-button2">
+                                        <div class="slider__content-include-icon">
                                             <svg class="icon ">
                                                 <use xlink:href="icons/sprite/sprite.svg#include " />
                                             </svg>
                                         </div>
-                                        <div class="slider__content-iclude-text">
+                                        <div class="slider__content-include-text">
                                             Состав
                                         </div>
                                     </a>
+                                    <div class="slider__content-include-content" id="content-include2">
+                                        <ul class="include-content__conteiner">
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#beef " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Говядина
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    300 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#buns " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Булочки
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    100 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#salad " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Зелень
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    70 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#sauce " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Соус
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    150 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cucumber " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Овощи
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    200 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cheese " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Сыр
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    80 г
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="close"></a>
+                                    </div>
+
                                     <img src="images/dark-burger.png" class="slider__content-big-img">
                                     <div class="slider__content-kkal">
                                         <svg class="icon ">
@@ -217,16 +361,88 @@
                         <li class="slides-item slider__slides-item3">
                             <div class="slider__content ">
                                 <div class="slider__content-left">
-                                    <a class="slider__content-iclude">
-                                        <div class="slider__content-iclude-icon">
+                                    <a class="slider__content-include" id="content-include-button3">
+                                        <div class="slider__content-include-icon">
                                             <svg class="icon ">
                                                 <use xlink:href="icons/sprite/sprite.svg#include " />
                                             </svg>
                                         </div>
-                                        <div class="slider__content-iclude-text">
+                                        <div class="slider__content-include-text">
                                             Состав
                                         </div>
                                     </a>
+                                    <div class="slider__content-include-content" id="content-include3">
+                                        <ul class="include-content__conteiner">
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#beef " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Говядина
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    300 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#buns " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Булочки
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    100 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#salad " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Зелень
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    70 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#sauce " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Соус
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    150 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cucumber " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Овощи
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    200 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cheese " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Сыр
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    80 г
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="close"></a>
+                                    </div>
+
                                     <img src="images/dark-burger.png" class="slider__content-big-img">
                                     <div class="slider__content-kkal">
                                         <svg class="icon ">
@@ -250,89 +466,91 @@
                                     </div>
                                 </div>
                         </li>
-                        <li class="slides-item slider__slides-item4">
+                        <li class="slides-item last-slide slider__slides-item4">
                             <div class="slider__content ">
                                 <div class="slider__content-left">
-                                    <a class="slider__content-iclude">
-                                        <div class="slider__content-iclude-icon">
+                                    <a class="slider__content-include" id="content-include-button4">
+                                        <div class="slider__content-include-icon">
                                             <svg class="icon ">
-                                                <use xlink:href="icons/sprite/sprite.svg#include " />
+                                                <use xlink:href="icons/sprite/sprite.svg#include" />
                                             </svg>
                                         </div>
-                                        <div class="slider__content-iclude-text">
+                                        <div class="slider__content-include-text">
                                             Состав
                                         </div>
-                                        <div class="slider__content-iclude-content" id="include-content">
-                                            <ul class="iclude-content__conteiner">
-                                                <li class="iclude-content__item">
-                                                    <svg class="iclude-content__item-icon ">
-                                                        <use xlink:href="icons/sprite/sprite.svg#kkal " />
-                                                    </svg>
-                                                    <div class="iclude-content__item-ingridient">
-                                                        Говядина
-                                                    </div>
-                                                    <div class="iclude-content__item-mass">
-                                                        300 г
-                                                    </div>
-                                                </li>
-                                                <li class="iclude-content__item">
-                                                    <svg class="iclude-content__item-icon ">
-                                                        <use xlink:href="icons/sprite/sprite.svg#kkal " />
-                                                    </svg>
-                                                    <div class="iclude-content__item-ingridient">
-                                                        Булочки
-                                                    </div>
-                                                    <div class="iclude-content__item-mass">
-                                                        100 г
-                                                    </div>
-                                                </li>
-                                                <li class="iclude-content__item">
-                                                    <svg class="iclude-content__item-icon ">
-                                                        <use xlink:href="icons/sprite/sprite.svg#kkal " />
-                                                    </svg>
-                                                    <div class="iclude-content__item-ingridient">
-                                                        Зелень
-                                                    </div>
-                                                    <div class="iclude-content__item-mass">
-                                                        70 г
-                                                    </div>
-                                                </li>
-                                                <li class="iclude-content__item">
-                                                    <svg class="iclude-content__item-icon ">
-                                                        <use xlink:href="icons/sprite/sprite.svg#kkal " />
-                                                    </svg>
-                                                    <div class="iclude-content__item-ingridient">
-                                                        Соус
-                                                    </div>
-                                                    <div class="iclude-content__item-mass">
-                                                        150 г
-                                                    </div>
-                                                </li>
-                                                <li class="iclude-content__item">
-                                                    <svg class="iclude-content__item-icon ">
-                                                        <use xlink:href="icons/sprite/sprite.svg#kkal " />
-                                                    </svg>
-                                                    <div class="iclude-content__item-ingridient">
-                                                        Овощи
-                                                    </div>
-                                                    <div class="iclude-content__item-mass">
-                                                        200 г
-                                                    </div>
-                                                </li>
-                                                <li class="iclude-content__item">
-                                                    <svg class="iclude-content__item-icon ">
-                                                        <use xlink:href="icons/sprite/sprite.svg#kkal " />
-                                                    </svg>
-                                                    <div class="iclude-content__item-ingridient">
-                                                        Сыр
-                                                    </div>
-                                                    <div class="iclude-content__item-mass">
-                                                        80 г
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </a>
+                                    <div class="slider__content-include-content" id="content-include4">
+                                        <ul class="include-content__conteiner">
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#beef " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Говядина
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    300 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#buns " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Булочки
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    100 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#salad " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Зелень
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    70 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#sauce " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Соус
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    150 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cucumber " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Овощи
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    200 г
+                                                </div>
+                                            </li>
+                                            <li class="include-content__item">
+                                                <svg class="include-content__item-icon ">
+                                                        <use xlink:href="icons/sprite/sprite.svg#cheese " />
+                                                    </svg>
+                                                <div class="include-content__item-ingridient">
+                                                    Сыр
+                                                </div>
+                                                <div class="include-content__item-mass">
+                                                    80 г
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="close"></a>
+                                    </div>
+
                                     <img src="images/dark-burger.png" class="slider__content-big-img">
                                     <div class="slider__content-kkal">
                                         <svg class="icon ">
@@ -359,7 +577,7 @@
                     </ul>
                     <div class="slider__nav-right ">
                         <div class="arrow-scroll-right ">
-                            <a href="# " class="arrow-scroll__link--right ">
+                            <a href="# " class="arrow-scroll__link--right " id="next">
                                 <svg class="icon ">
                                             <use xlink:href="icons/sprite/sprite.svg#arrow-scroll " />
                                         </svg>
@@ -458,8 +676,8 @@
                             Меню
                         </div>
                         <ul class="menu-acco ">
-                            <li class="menu-acco__item menu-acco__item--meat menu-acco__item--active ">
-                                <a href=" " class="menu-acco__title ">
+                            <li class="menu-acco__item menu-acco__item--meat">
+                                <a href="" class="menu-acco__title ">
                                     <span class="menu-acco__title-sub ">Для мясоедов</span>
                                 </a>
                                 <div class="menu-acco__content ">
@@ -471,7 +689,7 @@
                                 </div>
                             </li>
                             <li class="menu-acco__item menu-acco__item--vegan ">
-                                <a href=" " class="menu-acco__title ">
+                                <a href="" class="menu-acco__title ">
                                     <span class="menu-acco__title-sub ">Вегитарианское</span>
                                 </a>
                                 <div class="menu-acco__content ">
@@ -483,7 +701,7 @@
                                 </div>
                             </li>
                             <li class="menu-acco__item menu-acco__item--diet ">
-                                <a href=" " class="menu-acco__title ">
+                                <a href="" class="menu-acco__title ">
                                     <span class="menu-acco__title-sub ">Диетическое</span>
                                 </a>
                                 <div class="menu-acco__content ">
@@ -504,113 +722,129 @@
                     <ul class="people-list ">
                         <li class="people-list__item people-list__item--01 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--02 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--03 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--04 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--05 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--06 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--07 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info ">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="people-list__item people-list__item--08 ">
                             <div class="people-list__item-photo "></div>
-                            <div class="people-list__item-info ">
-                                <h3 class="people-list__item-title ">
-                                    Константин Спилберг
-                                </h3>
-                                <div class="people-list__item-body ">
-                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                                </div>
-                                <div class="people-list__read-more ">
-                                    <a href="# " class="any-button any-button--more ">Подробнее</a>
+                            <div class="people-list__item-container ">
+                                <div class="people-list__item-info">
+                                    <h3 class="people-list__item-title ">
+                                        Константин Спилберг
+                                    </h3>
+                                    <div class="people-list__item-body ">
+                                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                    </div>
+                                    <div class="people-list__read-more ">
+                                        <a href="# " class="any-button any-button--more ">Подробнее</a>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -805,6 +1039,11 @@
             </div>
             </div>
             </div>
+
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/slider.js"></script>
+            <script src="js/accordeon.js"></script>
+
             <script type="text/javascript">
                 function changeClass() {
                     if (document.getElementById("menu-page").className.match(/(?:^|\s)show-menu(?!\S)/)) {
@@ -819,19 +1058,22 @@
                     };
                 };
 
+                function changeClassInclude() {
+                    if (document.getElementById("content-include1").className.match(/(?:^|\s)show-include(?!\S)/)) {
+                        document.getElementById("content-include1").classList.remove('show-include')
+                    } else {
+                        document.getElementById("content-include1").classList.add('show-include')
+                    };
+                };
                 window.onload = function() {
                     document.getElementById("humburger-menu-link").addEventListener('click', changeClass);
+                    document.getElementById("content-include-button1").addEventListener('click', changeClassInclude);
                 };
-                window.addEventListener("load", function() {
-                    document.getElementsByClassName("slider__content-iclude").addEventListener("click", function(e) {
-                            e.preventDefault();
-                            if (document.getElementsByClassName("slider__content-iclude").className.match(/(?:^|\s)open-include(?!\S)/)) {
-                                document.getElementById("include-content").classList.remove('open-include')
-                            } else {
-                                document.getElementById("include-content").classList.add('open-include')
-                            };
-                        }
-                    })
+
+                [].forEach.call(document.querySelectorAll('.close'), function(close) {
+                    close.addEventListener('click', function() {
+                        document.getElementById("content-include1").classList.remove('show-include');
+                    });
                 });
             </script>
 </body>
