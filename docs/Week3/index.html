@@ -925,27 +925,13 @@
                                             <button type="submit" class="form__input form__input--button any-button any-button--order ">Заказать</button>
                                         </label>
                                         <label class="form__block form__block--button ">
-                                                <button name="clear " type="button " class="form__input form__input--button any-button any-button--no-fill ">Очистить</button>
+                                                <button name="clear " type="clear " class="form__input form__input--button any-button any-button--no-fill ">Очистить</button>
                                         </label>
                                     </div>
                                 </div>
                             </div>
                         </form>
                         <div id="result"></div>
-                        <script>
-                            $(document).ready(function() {
-                                $("#order-form").on('submit', function(e) {
-                                    e.preventDefault();
-                                    $.ajax('data.php', {
-                                        type: "POST",
-                                        data: $(this).serialize(),
-                                        success: function(data) {
-                                            $('#result').text(data);
-                                        }
-                                    })
-                                })
-                            });
-                        </script>
                     </div>
                 </div>
             </section>
@@ -1109,6 +1095,20 @@
             </script>
 
 
+            <script>
+                $(document).ready(function() {
+                    $("#order-form").on('submit', function(e) {
+                        e.preventDefault();
+                        $.ajax('data.php', {
+                            type: "POST",
+                            data: $(this).serialize(),
+                            success: function(data) {
+                                $('#result').text(data);
+                            }
+                        })
+                    })
+                });
+            </script>
 
             <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
             <script type="text/javascript">
