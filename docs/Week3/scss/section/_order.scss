@@ -183,6 +183,7 @@
 #pay-card:checked+.form__block--radios:after,
 #no-call:checked+.form__block--checkbox:after {
     background-color: $orange;
+    content: "";
 }
 
 #no-call:checked+.form__block--checkbox:after {

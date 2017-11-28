@@ -1391,7 +1391,8 @@ footer {
 #change:checked + .form__block--radios:after,
 #pay-card:checked + .form__block--radios:after,
 #no-call:checked + .form__block--checkbox:after {
-  background-color: #e25028; }
+  background-color: #e25028;
+  content: ""; }
 
 #no-call:checked + .form__block--checkbox:after {
   border-radius: 0%; }
