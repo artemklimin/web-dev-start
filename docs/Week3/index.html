@@ -12,11 +12,6 @@
     <script>
         svg4everybody();
     </script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/accordeon.js"></script>
-    <script src="js/jquery.onepage-scroll.js"></script>
-    <title>Gamburger week3</title>
 </head>
 
 <body>
@@ -34,22 +29,22 @@
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link" data-goto="1">О нас</a>
+                                        <a href="#1" class="nav__link" data-index="1">О нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link" data-goto="2">Бургеры</a>
+                                        <a href="#2" class="nav__link" data-index="2">Бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link" data-goto="3">Команда</a>
+                                        <a href="#3" class="nav__link" data-index="3">Команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link" data-goto="4">Меню</a>
+                                        <a href="#4" class="nav__link" data-index="4">Меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link" data-goto="5">Отзывы</a>
+                                        <a href="#5" class="nav__link" data-index="5">Отзывы</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link" data-goto="6">Контакты</a>
+                                        <a href="#6" class="nav__link" data-index="6">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -990,7 +985,7 @@
                 </div>
             </section>
             </div>
-            <aside class="aside dot-nav ">
+            <!--<aside class="aside dot-nav ">
                 <ul class="dot-nav-list ">
                     <li class="dot-nav-list__item ">
                         <a href="# " class="dot-nav-list__item-link "></a>
@@ -1017,7 +1012,7 @@
                         <a href="# " class="dot-nav-list__item-link "></a>
                     </li>
                 </ul>
-            </aside>
+            </aside>-->
             <div id="menu-page">
                 <nav class="nav">
                     <ul class="nav__list">
@@ -1076,6 +1071,20 @@
                 [].forEach.call(document.querySelectorAll('.close'), function(close) {
                     close.addEventListener('click', function() {
                         document.getElementById("content-include1").classList.remove('show-include');
+                    });
+                });
+            </script>
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/slider.js"></script>
+            <script src="js/accordeon.js"></script>
+            <script src="js/jquery.onepage-scroll.js"></script>
+            <title>Gamburger week3</title>
+            <script>
+                $(document).ready(function() {
+                    $(".main").onepage_scroll({
+                        sectionContainer: "section",
+                        responsiveFallback: 600,
+                        loop: true
                     });
                 });
             </script>
